@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <table class="table table-hover">
+        <tr>
+            <th>Изображение</th>
+        </tr>
+        {% for photo in photos %}
+            <tr>
+                <td>
+                    <img src="/uploads/photos/{{ photo.pathToImage }}" alt="" width="500px">
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

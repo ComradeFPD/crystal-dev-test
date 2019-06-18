@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a href="/" class="navbar-brand">Test task</a>
+            <a href="/photos/upload" class="nav-link">Загрузить фотографии</a>
+            <a href="/photos/view" class="nav-link">Посмотреть фотографии</a>
+        </div>
+    </nav>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
